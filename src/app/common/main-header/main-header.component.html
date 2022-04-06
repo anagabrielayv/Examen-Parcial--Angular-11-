@@ -1,0 +1,28 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/bg/bg-image-32.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h1 class="">Business.</h1>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+      <button class="btn-default">CONTACT US</button>
+    </div>
+    </div>
+    <div class="carousel-item"  *ngFor="let filaBanner of listaBanner">
+      <img src="https://zisoftacademy.com/apiclases/img/banner/{{filaBanner.imagen}}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h1>{{filaBanner.nombre}}</h1>
+      <button class="btn-default">{{filaBanner.descripcion}}</button>
+    </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
